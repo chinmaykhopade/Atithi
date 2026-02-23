@@ -1,0 +1,2213 @@
+﻿
+> hottel@0.1.0 build
+> next build
+
+npm : ΓÜá Warning: Next.js 
+inferred your workspace 
+root, but it may not be 
+correct.
+At line:1 char:68
++ ... rce ".next" 
+-ErrorAction 
+SilentlyContinue; npm run 
+build 2>&1 | Out-F ...
++                           
+                     
+~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          
+    : NotSpecified: (ΓÜá W  
+  arning: Ne...not be cor   
+ rect.:String) [], Remot    
+eException
+    + FullyQualifiedErrorId 
+    : NativeCommandError
+ 
+ We detected multiple 
+lockfiles and selected the 
+directory of C:\Users\HP\pac
+kage-lock.json as the root 
+directory.
+ To silence this warning, 
+set `turbopack.root` in 
+your Next.js config, or 
+consider removing one of 
+the lockfiles if it's not 
+needed.
+   See https://nextjs.org/do
+cs/app/api-reference/config/
+next-config-js/turbopack#roo
+t-directory for more 
+information.
+ Detected additional 
+lockfiles: 
+   * C:\Users\HP\Desktop\hot
+tel\package-lock.json
+
+Γû▓ Next.js 16.1.6 (Turbopack)
+- Environments: .env.local
+
+ΓÜá The "middleware" file 
+convention is deprecated. 
+Please use "proxy" instead. 
+Learn more: https://nextjs.o
+rg/docs/messages/middleware-
+to-proxy
+  Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build 
+failed with 23 errors:
+./Desktop/hottel/app/(auth)/
+login/page.tsx:7:1
+Module not found: Can't 
+resolve 'react-hot-toast'
+[0m [90m  5 |[39m 
+[36mimport[39m { 
+useRouter[33m,[39m 
+useSearchParams } 
+[36mfrom[39m [32m"next/na
+vigation"[39m[33m;[39m
+ [90m  6 |[39m 
+[36mimport[39m 
+[33mLink[39m 
+[36mfrom[39m [32m"next/li
+nk"[39m[33m;[39m
+[31m[1m>[22m[39m[90m  
+7 |[39m [36mimport[39m 
+toast [36mfrom[39m [32m"r
+eact-hot-toast"[39m[33m;[
+39m
+ [90m    |[39m [31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m
+ [90m  8 |[39m 
+[36mimport[39m { motion } 
+[36mfrom[39m [32m"framer-
+motion"[39m[33m;[39m
+ [90m  9 |[39m
+ [90m 10 |[39m 
+[36mexport[39m 
+[36mdefault[39m 
+[36mfunction[39m 
+[33mLoginPage[39m() {[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/hottel/app/(au
+th)/login/page.tsx [Client 
+Component Browser]
+    ./Desktop/hottel/app/(au
+th)/login/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./Desktop/hottel/app/(au
+th)/login/page.tsx [Client 
+Component SSR]
+    ./Desktop/hottel/app/(au
+th)/login/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/mess
+ages/module-not-found
+
+
+./Desktop/hottel/app/(auth)/
+register/page.tsx:7:1
+Module not found: Can't 
+resolve 'react-hot-toast'
+[0m [90m  5 |[39m 
+[36mimport[39m { 
+useRouter } [36mfrom[39m 
+[32m"next/navigation"[39m[
+33m;[39m
+ [90m  6 |[39m 
+[36mimport[39m 
+[33mLink[39m 
+[36mfrom[39m [32m"next/li
+nk"[39m[33m;[39m
+[31m[1m>[22m[39m[90m  
+7 |[39m [36mimport[39m 
+toast [36mfrom[39m [32m"r
+eact-hot-toast"[39m[33m;[
+39m
+ [90m    |[39m [31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m
+ [90m  8 |[39m 
+[36mimport[39m { motion } 
+[36mfrom[39m [32m"framer-
+motion"[39m[33m;[39m
+ [90m  9 |[39m
+ [90m 10 |[39m 
+[36mexport[39m 
+[36mdefault[39m 
+[36mfunction[39m 
+[33mRegisterPage[39m() 
+{[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/hottel/app/(au
+th)/register/page.tsx 
+[Client Component Browser]
+    ./Desktop/hottel/app/(au
+th)/register/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./Desktop/hottel/app/(au
+th)/register/page.tsx 
+[Client Component SSR]
+    ./Desktop/hottel/app/(au
+th)/register/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/mess
+ages/module-not-found
+
+
+./Desktop/hottel/app/admin/h
+otels/page.tsx:7:1
+Module not found: Can't 
+resolve 'react-hot-toast'
+[0m [90m  5 |[39m 
+[36mimport[39m { 
+formatINR } [36mfrom[39m 
+[32m"@/utils/formatCurrency"
+[39m[33m;[39m
+ [90m  6 |[39m 
+[36mimport[39m { motion } 
+[36mfrom[39m [32m"framer-
+motion"[39m[33m;[39m
+[31m[1m>[22m[39m[90m  
+7 |[39m [36mimport[39m 
+toast [36mfrom[39m [32m"r
+eact-hot-toast"[39m[33m;[
+39m
+ [90m    |[39m [31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m
+ [90m  8 |[39m 
+[36mimport[39m 
+[33mLink[39m 
+[36mfrom[39m [32m"next/li
+nk"[39m[33m;[39m
+ [90m  9 |[39m
+ [90m 10 |[39m 
+[36mexport[39m 
+[36mdefault[39m 
+[36mfunction[39m 
+[33mAdminHotelsPage[39m() 
+{[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/hottel/app/adm
+in/hotels/page.tsx [Client 
+Component Browser]
+    ./Desktop/hottel/app/adm
+in/hotels/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./Desktop/hottel/app/adm
+in/hotels/page.tsx [Client 
+Component SSR]
+    ./Desktop/hottel/app/adm
+in/hotels/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/mess
+ages/module-not-found
+
+
+./Desktop/hottel/app/admin/u
+sers/page.tsx:7:1
+Module not found: Can't 
+resolve 'react-hot-toast'
+[0m [90m  5 |[39m 
+[36mimport[39m { 
+formatDate } [36mfrom[39m 
+[32m"@/utils/formatCurrency
+"[39m[33m;[39m
+ [90m  6 |[39m 
+[36mimport[39m { motion } 
+[36mfrom[39m [32m"framer-
+motion"[39m[33m;[39m
+[31m[1m>[22m[39m[90m  
+7 |[39m [36mimport[39m 
+toast [36mfrom[39m [32m"r
+eact-hot-toast"[39m[33m;[
+39m
+ [90m    |[39m [31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m
+ [90m  8 |[39m 
+[36mimport[39m 
+[33mLink[39m 
+[36mfrom[39m [32m"next/li
+nk"[39m[33m;[39m
+ [90m  9 |[39m
+ [90m 10 |[39m 
+[36mexport[39m 
+[36mdefault[39m 
+[36mfunction[39m 
+[33mAdminUsersPage[39m() 
+{[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/hottel/app/adm
+in/users/page.tsx [Client 
+Component Browser]
+    ./Desktop/hottel/app/adm
+in/users/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./Desktop/hottel/app/adm
+in/users/page.tsx [Client 
+Component SSR]
+    ./Desktop/hottel/app/adm
+in/users/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/mess
+ages/module-not-found
+
+
+./Desktop/hottel/app/booking
+/[hotelId]/page.tsx:10:1
+Module not found: Can't 
+resolve 'react-hot-toast'
+[0m [90m  8 |[39m 
+[36mimport[39m { 
+calculateNights } 
+[36mfrom[39m [32m"@/utils
+/helpers"[39m[33m;[39m
+ [90m  9 |[39m 
+[36mimport[39m { motion } 
+[36mfrom[39m [32m"framer-
+motion"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 
+10 |[39m [36mimport[39m 
+toast [36mfrom[39m [32m"r
+eact-hot-toast"[39m[33m;[
+39m
+ [90m    |[39m [31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m
+ [90m 11 |[39m 
+[36mimport[39m { [33mFiCa
+lendar[39m[33m,[39m [33m
+FiMapPin[39m[33m,[39m 
+[33mFiUsers[39m } 
+[36mfrom[39m [32m"react-i
+cons/fi"[39m[33m;[39m
+ [90m 12 |[39m
+ [90m 13 |[39m 
+[36mexport[39m 
+[36mdefault[39m 
+[36mfunction[39m 
+[33mBookingPage[39m() 
+{[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/hottel/app/boo
+king/[hotelId]/page.tsx 
+[Client Component Browser]
+    ./Desktop/hottel/app/boo
+king/[hotelId]/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./Desktop/hottel/app/boo
+king/[hotelId]/page.tsx 
+[Client Component SSR]
+    ./Desktop/hottel/app/boo
+king/[hotelId]/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/mess
+ages/module-not-found
+
+
+./Desktop/hottel/app/dashboa
+rd/bookings/page.tsx:7:1
+Module not found: Can't 
+resolve 'react-hot-toast'
+[0m [90m  5 |[39m 
+[36mimport[39m { 
+formatINR[33m,[39m 
+formatDate } [36mfrom[39m 
+[32m"@/utils/formatCurrency
+"[39m[33m;[39m
+ [90m  6 |[39m 
+[36mimport[39m { motion } 
+[36mfrom[39m [32m"framer-
+motion"[39m[33m;[39m
+[31m[1m>[22m[39m[90m  
+7 |[39m [36mimport[39m 
+toast [36mfrom[39m [32m"r
+eact-hot-toast"[39m[33m;[
+39m
+ [90m    |[39m [31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m
+ [90m  8 |[39m 
+[36mimport[39m 
+[33mLink[39m 
+[36mfrom[39m [32m"next/li
+nk"[39m[33m;[39m
+ [90m  9 |[39m
+ [90m 10 |[39m 
+[36mexport[39m 
+[36mdefault[39m 
+[36mfunction[39m 
+[33mMyBookingsPage[39m() 
+{[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/hottel/app/das
+hboard/bookings/page.tsx 
+[Client Component Browser]
+    ./Desktop/hottel/app/das
+hboard/bookings/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./Desktop/hottel/app/das
+hboard/bookings/page.tsx 
+[Client Component SSR]
+    ./Desktop/hottel/app/das
+hboard/bookings/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/mess
+ages/module-not-found
+
+
+./Desktop/hottel/app/dashboa
+rd/profile/page.tsx:6:1
+Module not found: Can't 
+resolve 'react-hot-toast'
+[0m [90m 4 |[39m 
+[36mimport[39m { useAuth 
+} [36mfrom[39m [32m"@/con
+text/AuthContext"[39m[33m;
+[39m
+ [90m 5 |[39m 
+[36mimport[39m { motion } 
+[36mfrom[39m [32m"framer-
+motion"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 6 
+|[39m [36mimport[39m 
+toast [36mfrom[39m [32m"r
+eact-hot-toast"[39m[33m;[
+39m
+ [90m   |[39m [31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m
+ [90m 7 |[39m 
+[36mimport[39m 
+[33mLink[39m 
+[36mfrom[39m [32m"next/li
+nk"[39m[33m;[39m
+ [90m 8 |[39m
+ [90m 9 |[39m 
+[36mexport[39m 
+[36mdefault[39m 
+[36mfunction[39m 
+[33mProfilePage[39m() 
+{[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/hottel/app/das
+hboard/profile/page.tsx 
+[Client Component Browser]
+    ./Desktop/hottel/app/das
+hboard/profile/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./Desktop/hottel/app/das
+hboard/profile/page.tsx 
+[Client Component SSR]
+    ./Desktop/hottel/app/das
+hboard/profile/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/mess
+ages/module-not-found
+
+
+./Desktop/hottel/app/hotels/
+[id]/page.tsx:11:1
+Module not found: Can't 
+resolve 'react-hot-toast'
+[0m [90m  9 |[39m 
+[36mimport[39m { motion } 
+[36mfrom[39m [32m"framer-
+motion"[39m[33m;[39m
+ [90m 10 |[39m 
+[36mimport[39m { [33mFiMa
+pPin[39m[33m,[39m 
+[33mFiStar[39m[33m,[39m 
+[33mFiUsers[39m[33m,[39m
+ [33mFiCheck[39m[33m,[39
+m [33mFiArrowRight[39m } 
+[36mfrom[39m [32m"react-i
+cons/fi"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 
+11 |[39m [36mimport[39m 
+toast [36mfrom[39m [32m"r
+eact-hot-toast"[39m[33m;[
+39m
+ [90m    |[39m [31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m
+ [90m 12 |[39m 
+[36mimport[39m 
+[33mLink[39m 
+[36mfrom[39m [32m"next/li
+nk"[39m[33m;[39m
+ [90m 13 |[39m
+ [90m 14 |[39m 
+[36mexport[39m 
+[36mdefault[39m 
+[36mfunction[39m 
+[33mHotelDetailPage[39m() 
+{[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/hottel/app/hot
+els/[id]/page.tsx [Client 
+Component Browser]
+    ./Desktop/hottel/app/hot
+els/[id]/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./Desktop/hottel/app/hot
+els/[id]/page.tsx [Client 
+Component SSR]
+    ./Desktop/hottel/app/hot
+els/[id]/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/mess
+ages/module-not-found
+
+
+./Desktop/hottel/app/owner/h
+otels/[id]/edit/page.tsx:8:1
+Module not found: Can't 
+resolve 'react-hot-toast'
+[0m [90m  6 |[39m 
+[36mimport[39m { [33mINDI
+AN_CITIES[39m[33m,[39m [
+33mINDIAN_STATES[39m[33m,
+[39m [33mAMENITIES[39m } 
+[36mfrom[39m [32m"@/utils
+/constants"[39m[33m;[39m
+ [90m  7 |[39m 
+[36mimport[39m { motion } 
+[36mfrom[39m [32m"framer-
+motion"[39m[33m;[39m
+[31m[1m>[22m[39m[90m  
+8 |[39m [36mimport[39m 
+toast [36mfrom[39m [32m"r
+eact-hot-toast"[39m[33m;[
+39m
+ [90m    |[39m [31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m
+ [90m  9 |[39m 
+[36mimport[39m 
+[33mLink[39m 
+[36mfrom[39m [32m"next/li
+nk"[39m[33m;[39m
+ [90m 10 |[39m
+ [90m 11 |[39m 
+[36mexport[39m 
+[36mdefault[39m 
+[36mfunction[39m 
+[33mEditHotelPage[39m() 
+{[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/hottel/app/own
+er/hotels/[id]/edit/page.tsx
+ [Client Component Browser]
+    ./Desktop/hottel/app/own
+er/hotels/[id]/edit/page.tsx
+ [Server Component]
+
+  Client Component SSR:
+    ./Desktop/hottel/app/own
+er/hotels/[id]/edit/page.tsx
+ [Client Component SSR]
+    ./Desktop/hottel/app/own
+er/hotels/[id]/edit/page.tsx
+ [Server Component]
+
+https://nextjs.org/docs/mess
+ages/module-not-found
+
+
+./Desktop/hottel/app/owner/h
+otels/new/page.tsx:8:1
+Module not found: Can't 
+resolve 'react-hot-toast'
+[0m [90m  6 |[39m 
+[36mimport[39m { [33mINDI
+AN_CITIES[39m[33m,[39m [
+33mINDIAN_STATES[39m[33m,
+[39m [33mAMENITIES[39m[33
+m,[39m 
+[33mHOTEL_IMAGES[39m } 
+[36mfrom[39m [32m"@/utils
+/constants"[39m[33m;[39m
+ [90m  7 |[39m 
+[36mimport[39m { motion } 
+[36mfrom[39m [32m"framer-
+motion"[39m[33m;[39m
+[31m[1m>[22m[39m[90m  
+8 |[39m [36mimport[39m 
+toast [36mfrom[39m [32m"r
+eact-hot-toast"[39m[33m;[
+39m
+ [90m    |[39m [31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m
+ [90m  9 |[39m 
+[36mimport[39m 
+[33mLink[39m 
+[36mfrom[39m [32m"next/li
+nk"[39m[33m;[39m
+ [90m 10 |[39m
+ [90m 11 |[39m 
+[36mexport[39m 
+[36mdefault[39m 
+[36mfunction[39m 
+[33mNewHotelPage[39m() 
+{[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/hottel/app/own
+er/hotels/new/page.tsx 
+[Client Component Browser]
+    ./Desktop/hottel/app/own
+er/hotels/new/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./Desktop/hottel/app/own
+er/hotels/new/page.tsx 
+[Client Component SSR]
+    ./Desktop/hottel/app/own
+er/hotels/new/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/mess
+ages/module-not-found
+
+
+./Desktop/hottel/app/owner/h
+otels/page.tsx:7:1
+Module not found: Can't 
+resolve 'react-hot-toast'
+[0m [90m  5 |[39m 
+[36mimport[39m { 
+formatINR } [36mfrom[39m 
+[32m"@/utils/formatCurrency"
+[39m[33m;[39m
+ [90m  6 |[39m 
+[36mimport[39m { motion } 
+[36mfrom[39m [32m"framer-
+motion"[39m[33m;[39m
+[31m[1m>[22m[39m[90m  
+7 |[39m [36mimport[39m 
+toast [36mfrom[39m [32m"r
+eact-hot-toast"[39m[33m;[
+39m
+ [90m    |[39m [31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m
+ [90m  8 |[39m 
+[36mimport[39m 
+[33mLink[39m 
+[36mfrom[39m [32m"next/li
+nk"[39m[33m;[39m
+ [90m  9 |[39m
+ [90m 10 |[39m 
+[36mexport[39m 
+[36mdefault[39m 
+[36mfunction[39m 
+[33mOwnerHotelsPage[39m() 
+{[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/hottel/app/own
+er/hotels/page.tsx [Client 
+Component Browser]
+    ./Desktop/hottel/app/own
+er/hotels/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./Desktop/hottel/app/own
+er/hotels/page.tsx [Client 
+Component SSR]
+    ./Desktop/hottel/app/own
+er/hotels/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/mess
+ages/module-not-found
+
+
+./Desktop/hottel/app/owner/r
+ooms/[hotelId]/page.tsx:9:1
+Module not found: Can't 
+resolve 'react-hot-toast'
+[0m [90m  7 |[39m 
+[36mimport[39m { 
+formatINR } [36mfrom[39m 
+[32m"@/utils/formatCurrency"
+[39m[33m;[39m
+ [90m  8 |[39m 
+[36mimport[39m { motion } 
+[36mfrom[39m [32m"framer-
+motion"[39m[33m;[39m
+[31m[1m>[22m[39m[90m  
+9 |[39m [36mimport[39m 
+toast [36mfrom[39m [32m"r
+eact-hot-toast"[39m[33m;[
+39m
+ [90m    |[39m [31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m
+ [90m 10 |[39m 
+[36mimport[39m 
+[33mLink[39m 
+[36mfrom[39m [32m"next/li
+nk"[39m[33m;[39m
+ [90m 11 |[39m 
+[36mimport[39m { 
+[33mFiPlus[39m[33m,[39m 
+[33mFiEdit2[39m[33m,[39m
+ [33mFiTrash2[39m[33m,[3
+9m [33mFiUsers[39m } 
+[36mfrom[39m [32m"react-i
+cons/fi"[39m[33m;[39m
+ [90m 12 |[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/hottel/app/own
+er/rooms/[hotelId]/page.tsx 
+[Client Component Browser]
+    ./Desktop/hottel/app/own
+er/rooms/[hotelId]/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./Desktop/hottel/app/own
+er/rooms/[hotelId]/page.tsx 
+[Client Component SSR]
+    ./Desktop/hottel/app/own
+er/rooms/[hotelId]/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/mess
+ages/module-not-found
+
+
+./Desktop/hottel/components/
+RazorpayButton.tsx:5:1
+Module not found: Can't 
+resolve 'react-hot-toast'
+[0m [90m 3 |[39m 
+[36mimport[39m { useState 
+} [36mfrom[39m 
+[32m"react"[39m[33m;[39m
+ [90m 4 |[39m 
+[36mimport[39m { useAuth 
+} [36mfrom[39m [32m"@/con
+text/AuthContext"[39m[33m;
+[39m
+[31m[1m>[22m[39m[90m 5 
+|[39m [36mimport[39m 
+toast [36mfrom[39m [32m"r
+eact-hot-toast"[39m[33m;[
+39m
+ [90m   |[39m [31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m 
+[36minterface[39m 
+[33mProps[39m {
+ [90m 8 |[39m   
+amount[33m:[39m 
+number[33m;[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/hottel/compone
+nts/RazorpayButton.tsx 
+[Client Component Browser]
+    ./Desktop/hottel/app/boo
+king/[hotelId]/page.tsx 
+[Client Component Browser]
+    ./Desktop/hottel/app/boo
+king/[hotelId]/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./Desktop/hottel/compone
+nts/RazorpayButton.tsx 
+[Client Component SSR]
+    ./Desktop/hottel/app/boo
+king/[hotelId]/page.tsx 
+[Client Component SSR]
+    ./Desktop/hottel/app/boo
+king/[hotelId]/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/mess
+ages/module-not-found
+
+
+./Desktop/hottel/components/
+ReviewForm.tsx:5:1
+Module not found: Can't 
+resolve 'react-hot-toast'
+[0m [90m 3 |[39m 
+[36mimport[39m { useState 
+} [36mfrom[39m 
+[32m"react"[39m[33m;[39m
+ [90m 4 |[39m 
+[36mimport[39m { useAuth 
+} [36mfrom[39m [32m"@/con
+text/AuthContext"[39m[33m;
+[39m
+[31m[1m>[22m[39m[90m 5 
+|[39m [36mimport[39m 
+toast [36mfrom[39m [32m"r
+eact-hot-toast"[39m[33m;[
+39m
+ [90m   |[39m [31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m
+ [90m 6 |[39m 
+[36mimport[39m { 
+[33mFiStar[39m } 
+[36mfrom[39m [32m"react-i
+cons/fi"[39m[33m;[39m
+ [90m 7 |[39m
+ [90m 8 |[39m 
+[36minterface[39m 
+[33mProps[39m {[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/hottel/compone
+nts/ReviewForm.tsx [Client 
+Component Browser]
+    ./Desktop/hottel/app/hot
+els/[id]/page.tsx [Client 
+Component Browser]
+    ./Desktop/hottel/app/hot
+els/[id]/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./Desktop/hottel/compone
+nts/ReviewForm.tsx [Client 
+Component SSR]
+    ./Desktop/hottel/app/hot
+els/[id]/page.tsx [Client 
+Component SSR]
+    ./Desktop/hottel/app/hot
+els/[id]/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/mess
+ages/module-not-found
+
+
+./Desktop/hottel/context/Toa
+stContext.tsx:3:1
+Module not found: Can't 
+resolve 'react-hot-toast'
+[0m [90m 1 |[39m 
+[32m"use 
+client"[39m[33m;[39m
+ [90m 2 |[39m
+[31m[1m>[22m[39m[90m 3 
+|[39m [36mimport[39m { 
+[33mToaster[39m } 
+[36mfrom[39m [32m"react-h
+ot-toast"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m
+ [90m 4 |[39m
+ [90m 5 |[39m 
+[36mexport[39m 
+[36mdefault[39m 
+[36mfunction[39m 
+[33mToastProvider[39m() {
+ [90m 6 |[39m   
+[36mreturn[39m ([0m
+
+
+
+Import trace:
+  Server Component:
+    ./Desktop/hottel/context
+/ToastContext.tsx
+    ./Desktop/hottel/app/lay
+out.tsx
+
+https://nextjs.org/docs/mess
+ages/module-not-found
+
+
+./Desktop/hottel/app/booking
+/[hotelId]/page.tsx:11:1
+Module not found: Can't 
+resolve 'react-icons/fi'
+[0m [90m  9 |[39m 
+[36mimport[39m { motion } 
+[36mfrom[39m [32m"framer-
+motion"[39m[33m;[39m
+ [90m 10 |[39m 
+[36mimport[39m toast 
+[36mfrom[39m [32m"react-h
+ot-toast"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 
+11 |[39m [36mimport[39m 
+{ [33mFiCalendar[39m[33m,
+[39m [33mFiMapPin[39m[33
+m,[39m [33mFiUsers[39m } 
+[36mfrom[39m [32m"react-i
+cons/fi"[39m[33m;[39m
+ [90m    |[39m [31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m
+ [90m 12 |[39m
+ [90m 13 |[39m 
+[36mexport[39m 
+[36mdefault[39m 
+[36mfunction[39m 
+[33mBookingPage[39m() {
+ [90m 14 |[39m   
+[36mconst[39m { hotelId } 
+[33m=[39m 
+useParams()[33m;[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/hottel/app/boo
+king/[hotelId]/page.tsx 
+[Client Component Browser]
+    ./Desktop/hottel/app/boo
+king/[hotelId]/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./Desktop/hottel/app/boo
+king/[hotelId]/page.tsx 
+[Client Component SSR]
+    ./Desktop/hottel/app/boo
+king/[hotelId]/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/mess
+ages/module-not-found
+
+
+./Desktop/hottel/app/hotels/
+[id]/page.tsx:10:1
+Module not found: Can't 
+resolve 'react-icons/fi'
+[0m [90m  8 |[39m 
+[36mimport[39m { 
+formatINR[33m,[39m 
+formatDate } [36mfrom[39m 
+[32m"@/utils/formatCurrency
+"[39m[33m;[39m
+ [90m  9 |[39m 
+[36mimport[39m { motion } 
+[36mfrom[39m [32m"framer-
+motion"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 
+10 |[39m [36mimport[39m 
+{ [33mFiMapPin[39m[33m,[
+39m 
+[33mFiStar[39m[33m,[39m 
+[33mFiUsers[39m[33m,[39m
+ [33mFiCheck[39m[33m,[39
+m [33mFiArrowRight[39m } 
+[36mfrom[39m [32m"react-i
+cons/fi"[39m[33m;[39m
+ [90m    |[39m [31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m
+ [90m 11 |[39m 
+[36mimport[39m toast 
+[36mfrom[39m [32m"react-h
+ot-toast"[39m[33m;[39m
+ [90m 12 |[39m 
+[36mimport[39m 
+[33mLink[39m 
+[36mfrom[39m [32m"next/li
+nk"[39m[33m;[39m
+ [90m 13 |[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/hottel/app/hot
+els/[id]/page.tsx [Client 
+Component Browser]
+    ./Desktop/hottel/app/hot
+els/[id]/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./Desktop/hottel/app/hot
+els/[id]/page.tsx [Client 
+Component SSR]
+    ./Desktop/hottel/app/hot
+els/[id]/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/mess
+ages/module-not-found
+
+
+./Desktop/hottel/app/owner/r
+ooms/[hotelId]/page.tsx:11:1
+Module not found: Can't 
+resolve 'react-icons/fi'
+[0m [90m  9 |[39m 
+[36mimport[39m toast 
+[36mfrom[39m [32m"react-h
+ot-toast"[39m[33m;[39m
+ [90m 10 |[39m 
+[36mimport[39m 
+[33mLink[39m 
+[36mfrom[39m [32m"next/li
+nk"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 
+11 |[39m [36mimport[39m 
+{ 
+[33mFiPlus[39m[33m,[39m 
+[33mFiEdit2[39m[33m,[39m
+ [33mFiTrash2[39m[33m,[3
+9m [33mFiUsers[39m } 
+[36mfrom[39m [32m"react-i
+cons/fi"[39m[33m;[39m
+ [90m    |[39m [31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m
+ [90m 12 |[39m
+ [90m 13 |[39m 
+[36mexport[39m 
+[36mdefault[39m 
+[36mfunction[39m 
+[33mManageRoomsPage[39m() 
+{
+ [90m 14 |[39m   
+[36mconst[39m { hotelId } 
+[33m=[39m 
+useParams()[33m;[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/hottel/app/own
+er/rooms/[hotelId]/page.tsx 
+[Client Component Browser]
+    ./Desktop/hottel/app/own
+er/rooms/[hotelId]/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./Desktop/hottel/app/own
+er/rooms/[hotelId]/page.tsx 
+[Client Component SSR]
+    ./Desktop/hottel/app/own
+er/rooms/[hotelId]/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/mess
+ages/module-not-found
+
+
+./Desktop/hottel/components/
+HotelCard.tsx:6:1
+Module not found: Can't 
+resolve 'react-icons/fi'
+[0m [90m 4 |[39m 
+[36mimport[39m { 
+formatINR } [36mfrom[39m 
+[32m"@/utils/formatCurrency"
+[39m[33m;[39m
+ [90m 5 |[39m 
+[36mimport[39m { motion } 
+[36mfrom[39m [32m"framer-
+motion"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 6 
+|[39m [36mimport[39m { [
+33mFiMapPin[39m[33m,[39m 
+[33mFiStar[39m } 
+[36mfrom[39m [32m"react-i
+cons/fi"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m
+ [90m 7 |[39m
+ [90m 8 |[39m 
+[36minterface[39m 
+[33mHotel[39m {
+ [90m 9 |[39m   
+_id[33m:[39m 
+string[33m;[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/hottel/compone
+nts/HotelCard.tsx [Client 
+Component Browser]
+    ./Desktop/hottel/app/pag
+e.tsx [Client Component 
+Browser]
+    ./Desktop/hottel/app/pag
+e.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/hottel/compone
+nts/HotelCard.tsx [Client 
+Component SSR]
+    ./Desktop/hottel/app/pag
+e.tsx [Client Component SSR]
+    ./Desktop/hottel/app/pag
+e.tsx [Server Component]
+
+https://nextjs.org/docs/mess
+ages/module-not-found
+
+
+./Desktop/hottel/components/
+Navbar.tsx:6:1
+Module not found: Can't 
+resolve 'react-icons/fi'
+[0m [90m 4 |[39m 
+[36mimport[39m { useState 
+} [36mfrom[39m 
+[32m"react"[39m[33m;[39m
+ [90m 5 |[39m 
+[36mimport[39m { useAuth 
+} [36mfrom[39m [32m"@/con
+text/AuthContext"[39m[33m;
+[39m
+[31m[1m>[22m[39m[90m 6 
+|[39m [36mimport[39m { 
+[33mFiMenu[39m[33m,[39m 
+[33mFiX[39m[33m,[39m 
+[33mFiUser[39m[33m,[39m 
+[33mFiLogOut[39m[33m,[39
+m 
+[33mFiHome[39m[33m,[39m 
+[33mFiSearch[39m } 
+[36mfrom[39m [32m"react-i
+cons/fi"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m
+ [90m 7 |[39m 
+[36mimport[39m { 
+motion[33m,[39m 
+[33mAnimatePresence[39m } 
+[36mfrom[39m [32m"framer-
+motion"[39m[33m;[39m
+ [90m 8 |[39m
+ [90m 9 |[39m 
+[36mexport[39m 
+[36mdefault[39m 
+[36mfunction[39m 
+[33mNavbar[39m() {[0m
+
+
+
+Import trace:
+  Server Component:
+    ./Desktop/hottel/compone
+nts/Navbar.tsx
+    ./Desktop/hottel/app/lay
+out.tsx
+
+https://nextjs.org/docs/mess
+ages/module-not-found
+
+
+./Desktop/hottel/components/
+ReviewCard.tsx:3:1
+Module not found: Can't 
+resolve 'react-icons/fi'
+[0m [90m 1 |[39m 
+[32m"use 
+client"[39m[33m;[39m
+ [90m 2 |[39m
+[31m[1m>[22m[39m[90m 3 
+|[39m [36mimport[39m { 
+[33mFiStar[39m[33m,[39m 
+[33mFiTrash2[39m } 
+[36mfrom[39m [32m"react-i
+cons/fi"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m
+ [90m 4 |[39m 
+[36mimport[39m { 
+formatDate } [36mfrom[39m 
+[32m"@/utils/formatCurrency
+"[39m[33m;[39m
+ [90m 5 |[39m
+ [90m 6 |[39m 
+[36minterface[39m 
+[33mReview[39m {[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/hottel/compone
+nts/ReviewCard.tsx [Client 
+Component Browser]
+    ./Desktop/hottel/app/hot
+els/[id]/page.tsx [Client 
+Component Browser]
+    ./Desktop/hottel/app/hot
+els/[id]/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./Desktop/hottel/compone
+nts/ReviewCard.tsx [Client 
+Component SSR]
+    ./Desktop/hottel/app/hot
+els/[id]/page.tsx [Client 
+Component SSR]
+    ./Desktop/hottel/app/hot
+els/[id]/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/mess
+ages/module-not-found
+
+
+./Desktop/hottel/components/
+ReviewForm.tsx:6:1
+Module not found: Can't 
+resolve 'react-icons/fi'
+[0m [90m 4 |[39m 
+[36mimport[39m { useAuth 
+} [36mfrom[39m [32m"@/con
+text/AuthContext"[39m[33m;
+[39m
+ [90m 5 |[39m 
+[36mimport[39m toast 
+[36mfrom[39m [32m"react-h
+ot-toast"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 6 
+|[39m [36mimport[39m { 
+[33mFiStar[39m } 
+[36mfrom[39m [32m"react-i
+cons/fi"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m
+ [90m 7 |[39m
+ [90m 8 |[39m 
+[36minterface[39m 
+[33mProps[39m {
+ [90m 9 |[39m   
+hotelId[33m:[39m 
+string[33m;[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/hottel/compone
+nts/ReviewForm.tsx [Client 
+Component Browser]
+    ./Desktop/hottel/app/hot
+els/[id]/page.tsx [Client 
+Component Browser]
+    ./Desktop/hottel/app/hot
+els/[id]/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./Desktop/hottel/compone
+nts/ReviewForm.tsx [Client 
+Component SSR]
+    ./Desktop/hottel/app/hot
+els/[id]/page.tsx [Client 
+Component SSR]
+    ./Desktop/hottel/app/hot
+els/[id]/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/mess
+ages/module-not-found
+
+
+./Desktop/hottel/components/
+SearchFilter.tsx:5:1
+Module not found: Can't 
+resolve 'react-icons/fi'
+[0m [90m 3 |[39m 
+[36mimport[39m { useState 
+} [36mfrom[39m 
+[32m"react"[39m[33m;[39m
+ [90m 4 |[39m 
+[36mimport[39m { 
+[33mINDIAN_CITIES[39m } 
+[36mfrom[39m [32m"@/utils
+/constants"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 
+|[39m [36mimport[39m { [
+33mFiSearch[39m[33m,[39m 
+[33mFiFilter[39m[33m,[39
+m [33mFiX[39m } 
+[36mfrom[39m [32m"react-i
+cons/fi"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[
+22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m 
+[36minterface[39m 
+[33mFilterState[39m {
+ [90m 8 |[39m   
+search[33m:[39m 
+string[33m;[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/hottel/compone
+nts/SearchFilter.tsx 
+[Client Component Browser]
+    ./Desktop/hottel/app/hot
+els/page.tsx [Client 
+Component Browser]
+    ./Desktop/hottel/app/hot
+els/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./Desktop/hottel/compone
+nts/SearchFilter.tsx 
+[Client Component SSR]
+    ./Desktop/hottel/app/hot
+els/page.tsx [Client 
+Component SSR]
+    ./Desktop/hottel/app/hot
+els/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/mess
+ages/module-not-found
+
+
+    at <unknown> (./Desktop/
+hottel/app/(auth)/login/page
+.tsx:7:1)
+    at <unknown> (https://ne
+xtjs.org/docs/messages/modul
+e-not-found)
+    at <unknown> (./Desktop/
+hottel/app/(auth)/register/p
+age.tsx:7:1)
+    at <unknown> (https://ne
+xtjs.org/docs/messages/modul
+e-not-found)
+    at <unknown> (./Desktop/
+hottel/app/admin/hotels/page
+.tsx:7:1)
+    at <unknown> (https://ne
+xtjs.org/docs/messages/modul
+e-not-found)
+    at <unknown> (./Desktop/
+hottel/app/admin/users/page.
+tsx:7:1)
+    at <unknown> (https://ne
+xtjs.org/docs/messages/modul
+e-not-found)
+    at <unknown> (./Desktop/
+hottel/app/booking/[hotelId]
+/page.tsx:10:1)
+    at <unknown> (https://ne
+xtjs.org/docs/messages/modul
+e-not-found)
+    at <unknown> (./Desktop/
+hottel/app/dashboard/booking
+s/page.tsx:7:1)
+    at <unknown> (https://ne
+xtjs.org/docs/messages/modul
+e-not-found)
+    at <unknown> (./Desktop/
+hottel/app/dashboard/profile
+/page.tsx:6:1)
+    at <unknown> (https://ne
+xtjs.org/docs/messages/modul
+e-not-found)
+    at <unknown> (./Desktop/
+hottel/app/hotels/[id]/page.
+tsx:11:1)
+    at <unknown> (https://ne
+xtjs.org/docs/messages/modul
+e-not-found)
+    at <unknown> (./Desktop/
+hottel/app/owner/hotels/[id]
+/edit/page.tsx:8:1)
+    at <unknown> (https://ne
+xtjs.org/docs/messages/modul
+e-not-found)
+    at <unknown> (./Desktop/
+hottel/app/owner/hotels/new/
+page.tsx:8:1)
+    at <unknown> (https://ne
+xtjs.org/docs/messages/modul
+e-not-found)
+    at <unknown> (./Desktop/
+hottel/app/owner/hotels/page
+.tsx:7:1)
+    at <unknown> (https://ne
+xtjs.org/docs/messages/modul
+e-not-found)
+    at <unknown> (./Desktop/
+hottel/app/owner/rooms/[hote
+lId]/page.tsx:9:1)
+    at <unknown> (https://ne
+xtjs.org/docs/messages/modul
+e-not-found)
+    at <unknown> (./Desktop/
+hottel/components/RazorpayBu
+tton.tsx:5:1)
+    at <unknown> (https://ne
+xtjs.org/docs/messages/modul
+e-not-found)
+    at <unknown> (./Desktop/
+hottel/components/ReviewForm
+.tsx:5:1)
+    at <unknown> (https://ne
+xtjs.org/docs/messages/modul
+e-not-found)
+    at <unknown> (./Desktop/
+hottel/context/ToastContext.
+tsx:3:1)
+    at <unknown> (https://ne
+xtjs.org/docs/messages/modul
+e-not-found)
+    at <unknown> (./Desktop/
+hottel/app/booking/[hotelId]
+/page.tsx:11:1)
+    at <unknown> (https://ne
+xtjs.org/docs/messages/modul
+e-not-found)
+    at <unknown> (./Desktop/
+hottel/app/hotels/[id]/page.
+tsx:10:1)
+    at <unknown> (https://ne
+xtjs.org/docs/messages/modul
+e-not-found)
+    at <unknown> (./Desktop/
+hottel/app/owner/rooms/[hote
+lId]/page.tsx:11:1)
+    at <unknown> (https://ne
+xtjs.org/docs/messages/modul
+e-not-found)
+    at <unknown> (./Desktop/
+hottel/components/HotelCard.
+tsx:6:1)
+    at <unknown> (https://ne
+xtjs.org/docs/messages/modul
+e-not-found)
+    at <unknown> (./Desktop/
+hottel/components/Navbar.tsx
+:6:1)
+    at <unknown> (https://ne
+xtjs.org/docs/messages/modul
+e-not-found)
+    at <unknown> (./Desktop/
+hottel/components/ReviewCard
+.tsx:3:1)
+    at <unknown> (https://ne
+xtjs.org/docs/messages/modul
+e-not-found)
+    at <unknown> (./Desktop/
+hottel/components/ReviewForm
+.tsx:6:1)
+    at <unknown> (https://ne
+xtjs.org/docs/messages/modul
+e-not-found)
+    at <unknown> (./Desktop/
+hottel/components/SearchFilt
+er.tsx:5:1)
+    at <unknown> (https://ne
+xtjs.org/docs/messages/modul
+e-not-found)
