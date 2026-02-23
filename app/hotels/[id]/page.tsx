@@ -7,7 +7,7 @@ import ReviewCard from "@/components/ReviewCard";
 import ReviewForm from "@/components/ReviewForm";
 import { formatINR, formatDate } from "@/utils/formatCurrency";
 import { motion } from "framer-motion";
-import { FiMapPin, FiStar, FiUsers, FiCheck, FiArrowRight } from "react-icons/fi";
+import { FiMapPin, FiStar, FiUsers, FiCheck, FiArrowRight, FiShare2 } from "react-icons/fi";
 import toast from "react-hot-toast";
 import Link from "next/link";
 
@@ -40,6 +40,27 @@ export default function HotelDetailPage() {
   useEffect(() => {
     if (id) fetchData();
   }, [id]);
+
+  const handleShare = async () => {
+    const shareData = {
+      title: `${hotel?.name} | Atithi Luxury`,
+      text: `Check out this amazing property: ${hotel?.name} on Atithi.`,
+      url: window.location.href,
+    };
+
+    try {
+      if (navigator.share) {
+        await navigator.share(shareData);
+      } else {
+        await navigator.clipboard.writeText(window.location.href);
+        toast.success("Link copied to clipboard!");
+      }
+    } catch (err) {
+      if ((err as Error).name !== "AbortError") {
+        toast.error("Could not share");
+      }
+    }
+  };
 
   const handleDeleteReview = async (reviewId: string) => {
     if (!confirm("Delete this review?")) return;
@@ -102,9 +123,8 @@ export default function HotelDetailPage() {
               <button
                 key={i}
                 onClick={() => setSelectedImage(i)}
-                className={`w-3 h-3 rounded-full transition ${
-                  i === selectedImage ? "bg-white scale-125" : "bg-white/50"
-                }`}
+                className={`w-3 h-3 rounded-full transition ${i === selectedImage ? "bg-white scale-125" : "bg-white/50"
+                  }`}
               />
             ))}
           </div>
@@ -124,6 +144,13 @@ export default function HotelDetailPage() {
                 <span className="flex items-center gap-1 bg-white/20 px-3 py-1 rounded-full">
                   <FiStar className="fill-saffron-400 text-saffron-400" /> {hotel.rating} ({hotel.totalReviews} reviews)
                 </span>
+                <button
+                  onClick={handleShare}
+                  className="flex items-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-md px-4 py-1.5 rounded-full transition-all duration-200 group border border-white/20"
+                >
+                  <FiShare2 size={14} className="group-hover:scale-110 transition-transform" />
+                  <span className="text-sm font-medium">Share</span>
+                </button>
               </div>
             </motion.div>
           </div>

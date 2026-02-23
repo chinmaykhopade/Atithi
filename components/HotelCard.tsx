@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { formatINR } from "@/utils/formatCurrency";
 import { motion } from "framer-motion";
-import { FiMapPin, FiStar, FiArrowUpRight } from "react-icons/fi";
+import { FiMapPin, FiStar, FiArrowUpRight, FiShare2 } from "react-icons/fi";
+import toast from "react-hot-toast";
 
 interface Hotel {
   _id: string;
@@ -24,6 +25,25 @@ const AMENITY_ICONS: Record<string, string> = {
 };
 
 export default function HotelCard({ hotel, index = 0 }: { hotel: Hotel; index?: number }) {
+  const handleShare = (e: React.MouseEvent) => {
+    e.preventDefault(); // Prevent navigation
+    e.stopPropagation(); // Prevent navigation
+
+    const url = `${window.location.origin}/hotels/${hotel._id}`;
+    const shareData = {
+      title: `${hotel.name} | Atithi Luxury`,
+      text: `Check out this amazing property: ${hotel.name} on Atithi.`,
+      url: url,
+    };
+
+    if (navigator.share) {
+      navigator.share(shareData).catch(() => { });
+    } else {
+      navigator.clipboard.writeText(url);
+      toast.success("Link copied!");
+    }
+  };
+
   return (
     <motion.article
       initial={{ opacity: 0, y: 32 }}
@@ -47,12 +67,20 @@ export default function HotelCard({ hotel, index = 0 }: { hotel: Hotel; index?: 
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
 
             {/* Rating pill */}
-            <div className="absolute top-3.5 right-3.5 flex items-center gap-1 bg-white/95 backdrop-blur-sm px-2.5 py-1.5 rounded-xl shadow-sm">
-              <FiStar className="fill-amber-400 text-amber-400" size={12} />
-              <span className="text-sm font-bold text-stone-800">{hotel.rating > 0 ? hotel.rating : "New"}</span>
-              {hotel.totalReviews > 0 && (
-                <span className="text-xs text-stone-400">({hotel.totalReviews})</span>
-              )}
+            <div className="absolute top-3.5 right-3.5 flex items-center gap-2">
+              <button
+                onClick={handleShare}
+                className="p-2 bg-white/95 backdrop-blur-sm rounded-xl shadow-sm text-stone-600 hover:text-gold-600 hover:scale-105 active:scale-95 transition-all"
+              >
+                <FiShare2 size={13} />
+              </button>
+              <div className="flex items-center gap-1 bg-white/95 backdrop-blur-sm px-2.5 py-1.5 rounded-xl shadow-sm font-bold text-stone-800">
+                <FiStar className="fill-amber-400 text-amber-400" size={12} />
+                <span className="text-sm">{hotel.rating > 0 ? hotel.rating : "New"}</span>
+                {hotel.totalReviews > 0 && (
+                  <span className="text-[10px] text-stone-400 ml-0.5">({hotel.totalReviews})</span>
+                )}
+              </div>
             </div>
 
             {/* Location pill */}
