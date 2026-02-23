@@ -125,7 +125,7 @@ export default function HeroSection() {
             className="max-w-2xl mx-auto mb-8"
           >
             <div
-              className="flex gap-3 p-2.5 rounded-2xl"
+              className="flex flex-col sm:flex-row gap-3 p-2.5 rounded-[22px] sm:rounded-2xl"
               style={{
                 background: "rgba(255,255,255,0.08)",
                 backdropFilter: "blur(24px)",
@@ -133,7 +133,7 @@ export default function HeroSection() {
                 boxShadow: "0 8px 40px rgba(0,0,0,0.3)",
               }}
             >
-              <div className="flex-1 flex items-center gap-3 bg-white rounded-xl px-5 py-3.5">
+              <div className="flex-1 flex items-center gap-3 bg-white rounded-[16px] sm:rounded-xl px-4 sm:px-5 py-3.5">
                 <FiSearch className="text-stone-400 flex-shrink-0" size={18} />
                 <input
                   type="text"
@@ -145,7 +145,7 @@ export default function HeroSection() {
               </div>
               <button
                 type="submit"
-                className="flex items-center gap-2 px-7 py-3.5 rounded-xl text-white font-semibold text-[15px] transition-all duration-300 hover:-translate-y-0.5 whitespace-nowrap"
+                className="flex items-center justify-center gap-2 px-7 py-3.5 rounded-[16px] sm:rounded-xl text-white font-semibold text-[15px] transition-all duration-300 hover:-translate-y-0.5"
                 style={{
                   background: "linear-gradient(135deg, #d97706, #f59e0b, #f97316)",
                   boxShadow: "0 4px 20px rgba(217,119,6,0.4)",
@@ -201,18 +201,16 @@ export default function HeroSection() {
             borderColor: "rgba(255,255,255,0.06)",
           }}
         >
-          <div className="max-w-4xl mx-auto px-4 py-5">
-            <div className="grid grid-cols-4 gap-4 divide-x"
-              style={{ borderColor: "rgba(255,255,255,0.08)" }}>
+          <div className="max-w-4xl mx-auto px-5 py-5 sm:py-7">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-y-6 gap-x-0 sm:gap-4 divide-stone-100/10 md:divide-x">
               {STATS.map((s, i) => (
                 <div key={s.l}
-                  className={`text-center ${i > 0 ? "border-l" : ""}`}
-                  style={{ borderColor: "rgba(255,255,255,0.08)" }}
+                  className={`text-center px-2 ${i % 2 !== 0 && i < 2 ? "border-l md:border-l-0" : ""} ${i >= 2 && i % 2 !== 0 ? "border-l md:border-l-0" : ""} md:border-stone-100/10`}
                 >
                   <p
-                    className="font-display font-semibold leading-none mb-1"
+                    className="font-display font-semibold leading-none mb-1.5"
                     style={{
-                      fontSize: "clamp(1.4rem, 3vw, 2rem)",
+                      fontSize: "clamp(1.2rem, 4vw, 2rem)",
                       background: "linear-gradient(135deg,#fcd34d,#f59e0b,#f97316)",
                       WebkitBackgroundClip: "text",
                       WebkitTextFillColor: "transparent",
@@ -221,8 +219,8 @@ export default function HeroSection() {
                   >
                     {s.v}
                   </p>
-                  <p className="text-xs font-medium tracking-wide"
-                    style={{ color: "rgba(255,255,255,0.45)" }}>
+                  <p className="text-[10px] sm:text-xs font-medium tracking-[0.1em] uppercase"
+                    style={{ color: "rgba(255,255,255,0.4)" }}>
                     {s.l}
                   </p>
                 </div>

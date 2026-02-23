@@ -144,7 +144,8 @@ export default function OwnerDashboard() {
             </div>
           ) : (
             <div className="overflow-x-auto">
-              <table className="w-full">
+              {/* Desktop Table */}
+              <table className="w-full hidden sm:table">
                 <thead>
                   <tr className="bg-cream-50 border-b border-stone-100 text-left">
                     {["Property", "Location", "Price / Night", "Status", "Actions"].map((h) => (
@@ -155,7 +156,7 @@ export default function OwnerDashboard() {
                 <tbody className="divide-y divide-stone-50">
                   {hotels.map((hotel) => (
                     <tr key={hotel._id} className="hover:bg-cream-50/70 transition-colors group">
-                      <td className="px-6 py-4">
+                      <td className="px-6 py-4 text-left">
                         <div className="flex items-center gap-3">
                           <div className="w-12 h-12 rounded-xl overflow-hidden flex-shrink-0 bg-stone-100">
                             <img src={hotel.images?.[0] || "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=200&q=70"}
@@ -164,18 +165,18 @@ export default function OwnerDashboard() {
                           <p className="font-display font-semibold text-stone-800 text-base group-hover:text-gold-600 transition-colors">{hotel.name}</p>
                         </div>
                       </td>
-                      <td className="px-6 py-4 text-sm text-stone-500">{hotel.city}, {hotel.state}</td>
-                      <td className="px-6 py-4 font-display font-semibold gradient-green text-base">
+                      <td className="px-6 py-4 text-sm text-stone-500 text-left">{hotel.city}, {hotel.state}</td>
+                      <td className="px-6 py-4 font-display font-semibold gradient-green text-base text-left">
                         <span style={{ background: "linear-gradient(135deg,#064e3b,#138808)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
                           {formatINR(hotel.pricePerNight)}
                         </span>
                       </td>
-                      <td className="px-6 py-4">
+                      <td className="px-6 py-4 text-left">
                         <span className={`chip ${hotel.isApproved ? "chip-paid" : "chip-pending"}`}>
                           {hotel.isApproved ? "✓ Live" : "⏳ Pending"}
                         </span>
                       </td>
-                      <td className="px-6 py-4">
+                      <td className="px-6 py-4 text-left">
                         <div className="flex gap-2">
                           <Link href={`/owner/hotels/${hotel._id}/edit`}
                             className="flex items-center gap-1 text-xs font-semibold text-gold-600 hover:text-gold-700 bg-gold-50 hover:bg-gold-100 px-2.5 py-1.5 rounded-lg transition-all">
@@ -195,6 +196,44 @@ export default function OwnerDashboard() {
                   ))}
                 </tbody>
               </table>
+
+              {/* Mobile Cards */}
+              <div className="sm:hidden divide-y divide-stone-100">
+                {hotels.map((hotel) => (
+                  <div key={hotel._id} className="p-4 space-y-4">
+                    <div className="flex items-center gap-4">
+                      <div className="w-16 h-16 rounded-2xl overflow-hidden flex-shrink-0">
+                        <img src={hotel.images?.[0] || "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=200&q=70"}
+                          alt={hotel.name} className="w-full h-full object-cover" />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <p className="font-display font-semibold text-stone-800 text-lg line-clamp-1">{hotel.name}</p>
+                        <p className="text-sm text-stone-400">{hotel.city}, {hotel.state}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center justify-between">
+                      <span className={`chip ${hotel.isApproved ? "chip-paid" : "chip-pending"}`}>
+                        {hotel.isApproved ? "✓ Live" : "⏳ Pending"}
+                      </span>
+                      <p className="font-display font-bold text-lg text-emerald-700">{formatINR(hotel.pricePerNight)}</p>
+                    </div>
+                    <div className="grid grid-cols-3 gap-2">
+                      <Link href={`/owner/hotels/${hotel._id}/edit`}
+                        className="flex items-center justify-center gap-1.5 py-2.5 rounded-xl border border-stone-100 text-stone-600 text-xs font-semibold hover:bg-stone-50">
+                        <FiEdit2 size={12} /> Edit
+                      </Link>
+                      <Link href={`/owner/rooms/${hotel._id}`}
+                        className="flex items-center justify-center gap-1.5 py-2.5 rounded-xl border border-stone-100 text-stone-600 text-xs font-semibold hover:bg-stone-50">
+                        <FiGrid size={12} /> Rooms
+                      </Link>
+                      <Link href={`/hotels/${hotel._id}`}
+                        className="flex items-center justify-center gap-1.5 py-2.5 rounded-xl border border-stone-100 text-stone-600 text-xs font-semibold hover:bg-stone-50">
+                        <FiExternalLink size={12} /> View
+                      </Link>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           )}
         </motion.div>

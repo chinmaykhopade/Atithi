@@ -107,13 +107,13 @@ export default function HotelDetailPage() {
     <div className="min-h-screen bg-gray-50">
       {/* Image Gallery */}
       <div className="relative">
-        <div className="h-[50vh] md:h-[60vh] overflow-hidden">
+        <div className="h-[40vh] sm:h-[50vh] md:h-[60vh] overflow-hidden">
           <img
             src={hotel.images?.[selectedImage] || "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920"}
             alt={hotel.name}
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
         </div>
 
         {/* Image thumbnails */}
@@ -131,25 +131,25 @@ export default function HotelDetailPage() {
         )}
 
         {/* Hotel title overlay */}
-        <div className="absolute bottom-8 left-0 right-0 px-4">
+        <div className="absolute bottom-6 sm:bottom-8 left-0 right-0 px-4">
           <div className="max-w-7xl mx-auto">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-              <h1 className="text-3xl md:text-5xl font-heading font-bold text-white mb-2">
+              <h1 className="text-2xl sm:text-3xl md:text-5xl font-heading font-bold text-white mb-2 leading-tight">
                 {hotel.name}
               </h1>
-              <div className="flex flex-wrap items-center gap-4 text-white/90">
-                <span className="flex items-center gap-1">
+              <div className="flex flex-wrap items-center gap-2 sm:gap-4 text-white/90">
+                <span className="flex items-center gap-1 text-sm">
                   <FiMapPin /> {hotel.city}, {hotel.state}
                 </span>
-                <span className="flex items-center gap-1 bg-white/20 px-3 py-1 rounded-full">
+                <span className="flex items-center gap-1 bg-white/20 px-3 py-1 rounded-full text-sm">
                   <FiStar className="fill-saffron-400 text-saffron-400" /> {hotel.rating} ({hotel.totalReviews} reviews)
                 </span>
                 <button
                   onClick={handleShare}
-                  className="flex items-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-md px-4 py-1.5 rounded-full transition-all duration-200 group border border-white/20"
+                  className="flex items-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-md px-3 sm:px-4 py-1.5 rounded-full transition-all duration-200 group border border-white/20"
                 >
-                  <FiShare2 size={14} className="group-hover:scale-110 transition-transform" />
-                  <span className="text-sm font-medium">Share</span>
+                  <FiShare2 size={13} className="group-hover:scale-110 transition-transform" />
+                  <span className="text-xs sm:text-sm font-medium">Share</span>
                 </button>
               </div>
             </motion.div>

@@ -84,7 +84,7 @@ export default function HotelCard({ hotel, index = 0 }: { hotel: Hotel; index?: 
             </div>
 
             {/* Location pill */}
-            <div className="absolute bottom-3.5 left-3.5 flex items-center gap-1.5 bg-black/40 backdrop-blur-sm text-white/90 px-3 py-1 rounded-xl text-xs font-medium">
+            <div className="absolute bottom-3.5 left-3.5 flex items-center gap-1.5 bg-black/50 backdrop-blur-md text-white/95 px-3 py-1.5 rounded-xl text-[11px] font-medium border border-white/10">
               <FiMapPin size={10} /> {hotel.city}, {hotel.state}
             </div>
           </div>

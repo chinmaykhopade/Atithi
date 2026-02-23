@@ -85,16 +85,6 @@ function LoginContent() {
               Don't have an account?{" "}
               <Link href="/register" className="text-gold-600 font-semibold hover:text-gold-700">Register</Link>
             </p>
-
-            {/* Demo credentials */}
-            <div className="mt-7 p-4 bg-cream-100 rounded-2xl border border-gold-100">
-              <p className="text-xs font-bold text-gold-700 mb-2.5 uppercase tracking-widest">Demo Credentials</p>
-              <div className="space-y-1.5 text-xs text-stone-500 font-mono">
-                <p><span className="text-gold-600 font-semibold">Admin:</span> admin@smarthotel.in / admin123</p>
-                <p><span className="text-gold-600 font-semibold">Owner:</span> rajesh@smarthotel.in / owner123</p>
-                <p><span className="text-gold-600 font-semibold">Guest:</span> amit@gmail.com / customer123</p>
-              </div>
-            </div>
           </div>
         </div>
       </motion.div>
